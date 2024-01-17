@@ -27,16 +27,5 @@ def filter_list():
 
     return sorted(operations_list, key=operator.itemgetter('date'), reverse=True)
 
-
-# def creates_instance():
-#     """Создает экземпляры - 5 шт"""
-#     instance_file = list()
-#     for item in filter_list():
-#         if "from" in item:
-#             instance_file.append(Transactiondata(item["id"], item["date"], item["state"], item["operationAmount"],
-#                                                  item["description"], item["to"], item["from"]))
-#         else:
-#             instance_file.append(Transactiondata(item["id"], item["date"], item["state"], item["operationAmount"],
-#                                                  item["description"], item["to"]))
-#
-#     return instance_file
+print(type(filter_list()[0]))
+print(len(filter_list()))

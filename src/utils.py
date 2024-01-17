@@ -28,4 +28,4 @@ def filter_list():
     return sorted(operations_list, key=operator.itemgetter('date'), reverse=True)
 
 print(type(filter_list()[0]))
-print(len(filter_list()))
+print(filter_list())
